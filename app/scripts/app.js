@@ -1,13 +1,11 @@
 'use strict';
 
-angular.module('app', ['ui.router','app.services', 'app.controllers'])
+angular.module('app', ['ui.router','app.services', 'app.controllers','ngResource'])
 
 
 .run(function($rootScope, $state) {
 
   $rootScope.$on('$stateChangeStart', function (event, next) {
-
-
   });
 
 })
@@ -22,18 +20,21 @@ angular.module('app', ['ui.router','app.services', 'app.controllers'])
       templateUrl: 'views/about.html',
       controller: 'RootCtrl'
     })
-
-    .state('cake_day', {
-      url: '/cake_day',
-      templateUrl: 'views/cake_day.html',
+    .state('cake_days', {
+      url: '/cake_days',
+      templateUrl: 'views/cake_day/index.html',
       controller: 'CakeDayCtrl'
     })
-
-  .state('notes', {
-    url: '/notes',
-    templateUrl: 'views/notes.html',
-    controller: 'NotesCtrl'
-  })
+    .state('users', {
+      url: '/users',
+      templateUrl: 'views/user/index.html',
+      controller: 'UserCtrl'
+    })
+    .state('notes', {
+      url: '/notes',
+      templateUrl: 'views/notes.html',
+      controller: 'NotesCtrl'
+    })
 
 
   $urlRouterProvider.otherwise('about');

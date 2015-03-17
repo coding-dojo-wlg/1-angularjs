@@ -8,7 +8,6 @@ angular.module('app.controllers').controller('CakeDayCtrl', function($scope, $st
     {name: 'xavier', date: '1425878614000'},
     {name: 'ben', date: '1425878614000'}
   ];
-  $scope.name_search = '';
   $scope.next_cake_day = function(){
     var today = new Date().getTime();
     var the_diff = 1432272214000; // magics number

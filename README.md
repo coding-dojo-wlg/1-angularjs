@@ -16,6 +16,12 @@ bower install
 grunt connect
 ```
 
+and run our json 'backend' service
+```
+json-server db.json
+```
+
+
 
 ## Create a new one
 

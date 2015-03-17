@@ -11,7 +11,7 @@
    
       <div class="row">
         <div class="large-12 columns">
-          <h1>Site <small>This is my website.</small></h1>
+          <h1><a href="#/">CakeApp</a><small>This is the Aura cake day application!</small></h1>
           <hr/>
         </div>
       </div>
@@ -31,9 +31,8 @@
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
-                <li><a href="#/about">About</a></li>
-                <li><a href="#/notes">Notes</a></li>
-                <li><a href="#/cake_day">Cake Day</a></li>
+                <li><a href="#/cake_days">Cake Day</a></li>
+                <li><a href="#/users">Users</a></li>
               </ul>
             </div>
           </div>
@@ -41,6 +40,7 @@
       </footer>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -49,9 +49,11 @@
     <script src="scripts/controllers/controllers.js"></script>
     <script src="scripts/controllers/root.js"></script>
     <script src="scripts/controllers/cake_day.js"></script>
+    <script src="scripts/controllers/user.js"></script>
     <script src="scripts/controllers/notes.js"></script>
     <script src="scripts/services/services.js"></script>
     <script src="scripts/services/notes-service.js"></script>
+    <script src="scripts/services/users-service.js"></script>
 	
 	</body>
 </html>

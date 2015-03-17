@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "name": "trev"
+    },
+    {
+      "name": "aesse"
+    },
+    {
+      "name": "andrew"
+    },
+    {
+      "name": "henry"
+    },
+    {
+      "name": "xavier"
+    },
+    {
+      "name": "ben"
+    }
+  ],
+  "cake_days": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "movies": []
+}
