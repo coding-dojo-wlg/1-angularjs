@@ -10,16 +10,21 @@ npm install
 bower install
 ```
 
-#### Run it
+#### Run the fake 'backend' service with [json-server](https://github.com/typicode/json-server)
+```
+# json-server is required as a development dependency in the package.json
+./node_modules/json-server/bin/index.js db.json
 
+# another option is to install it globally
+npm install -g json-server
+json-server db.json
+```
+
+#### Run the project!
 ```
 grunt connect
 ```
 
-and run our json 'backend' service
-```
-json-server db.json
-```
 
 
 
@@ -37,4 +42,15 @@ grunt connect
 
 Yeoman scaffolds the app and installs its node and bower dependencies so you will have a working website at this stage.
 
+Create a fake backend with [json-server](https://github.com/typicode/json-server):
 
+```
+# add it to the project's dependencies
+cd myproject
+npm install --save-dev json-server
+
+# or install it globally
+npm install -g json-server
+
+# create a db.json file containing your fake data
+```
